@@ -32,3 +32,61 @@ Pocket Notes is a web application built with React and CSS modules for styling o
 4. Add notes to the selected group by entering text and clicking "Add Note."
 5. View notes within the selected group.
 
+## Local Development
+
+If you want to run the application locally or contribute to its development, follow these steps:
+
+### Frontend (React)
+
+1. Clone the Pocket Notes GitHub repository.
+2. Navigate to the project directory and install dependencies:
+
+   ```sh
+   cd Pocket-Notes
+   npm install
+        ```
+1. Start the JSON Server:
+    ```npm run dev```
+
+2 . The React application will be available at http://localhost:5173.
+
+### Backend (Node.js with JSON Server)
+
+1. Clone the Pocket Notes GitHub repository.
+2. Navigate to the project directory and install dependencies:
+
+   ```sh
+   cd notes-server
+   npm install
+        ```
+1. Start the JSON Server:
+    ```npm start```
+2 . The React application will be available at http://localhost:8080 || 3000.
+
+## Deployment
+
+- The frontend of the Pocket Notes application is deployed on [Netlify](https://earnest-melba-0950b8.netlify.app/).
+
+- The backend of the Pocket Notes application is deployed on [Render](https://notes-server-hg5p.onrender.com/).
+
+## Contribution
+
+Contributions to the project are welcome. You can contribute in the following ways:
+
+- Open issues to report problems or suggest improvements.
+- Provide feedback to help us enhance the application.
+- Create pull requests on the GitHub repositories:
+
+  - [Pocket Notes (Frontend)](https://github.com/Arvind78/Pocket-Notes)
+  - [Pocket Notes Server (Backend)](https://github.com/Arvind78/notes-server)
+
+We appreciate your contributions and feedback!
+
+## License
+
+This project is open-source and available under the MIT License.
+  ```
+
+You can copy and paste this Markdown code into your README.md file in your Git repository. This README.md file provides information on local development, deployment, contribution guidelines, and the project's license.
+
+    ```
