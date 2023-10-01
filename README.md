@@ -44,10 +44,11 @@ If you want to run the application locally or contribute to its development, fol
    ```sh
    cd Pocket-Notes
    npm install
-           ```
+           
    
 1. Start the JSON Server:
-    ```npm run dev ```
+    ```sh
+     npm run dev 
 
 2 . The React application will be available at http://localhost:5173.
 
@@ -59,10 +60,11 @@ If you want to run the application locally or contribute to its development, fol
    ```sh
    cd notes-server
    npm install
-            ```  
+              
 1. Start the JSON Server:
-    ```npm start
-           ```
+    ```sh
+      npm start
+           
 2 . The React application will be available at http://localhost:8080 || http://localhost:3000.
 
 ## Deployment
@@ -87,5 +89,6 @@ We appreciate your contributions and feedback!
 ## License
 
 This project is open-source and available under the MIT License.
-  ```You can copy and paste this Markdown code into your README.md file in your Git repository. This README.md file provides information on local development, deployment, contribution guidelines, and the project's license.
-                                                           ```
+  ``` sh
+      You can copy and paste this Markdown code into your README.md file in your Git repository. This README.md file provides information on local development, deployment, contribution guidelines, and the project's license.
+  
