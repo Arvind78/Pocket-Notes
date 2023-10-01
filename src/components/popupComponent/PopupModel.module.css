@@ -1,0 +1,423 @@
+/* popup-model.css */
+/* Styles for the popup model */
+
+/* Overlay for the popup */
+.overlay {
+  /* Position the overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+/* Popup content */
+.popup {
+  /* Style the popup */
+  background-color: white;
+  padding: 20px 15px;
+  width: 38%; /* Adjust as needed */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+/* Popup heading */
+.popupHeading {
+  /* Style the popup heading */
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Group name heading */
+.groupHeading {
+  /* Style the group name heading */
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Color heading */
+.colorHeading {
+  /* Style the color heading */
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Group input container */
+.groupInput {
+  /* Style the group input container */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  margin: 8px 0px 25px 0px;
+}
+
+/* Group input field */
+.groupInput input {
+  /* Style the group input field */
+  width: 70%;
+  padding: 8px 10px;
+  border: 2px solid #cccccc;
+  border-radius: 16px;
+  color: #cccccc;
+  outline: none;
+}
+
+/* Color selection container */
+.color {
+  /* Style the color selection container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Color boxes container */
+.colorBoxContainer {
+  /* Style the color boxes container */
+  width: 72%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 13px;
+}
+
+/* Color box */
+.colorDiv {
+  /* Style the color box */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* Selected color box */
+.colorDivSelect {
+  /* Style the selected color box */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid lightblue;
+}
+
+/* Create button container */
+.createBtn {
+  /* Style the create button container */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 15px;
+  padding: 0px 5px;
+}
+
+/* Create button */
+.createBtn button {
+  /* Style the create button */
+  width: 110px;
+  padding: 8px 0px;
+  background-color: #001F8B;
+  outline: none;
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Create button hover state */
+.createBtn button:hover {
+  /* Style the create button hover state */
+  transition: 300ms ease-in;
+  background-color: #0b4db6;
+}
+
+/* Popup button */
+.popupBtn {
+  /* Style the popup button */
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #16008B;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+  .popup {
+    /* Adjust popup styles for screens up to 1000px width */
+    background-color: white;
+    padding: 20px 15px;
+    width: 54%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 800px) {
+  .popup {
+    /* Adjust popup styles for screens up to 800px width */
+    background-color: white;
+    padding: 20px 15px;
+    width: 65%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 620px) {
+  .popup {
+    /* Adjust popup styles for screens up to 620px width */
+    background-color: white;
+    padding: 20px 15px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 500px) {
+  .popup {
+    /* Adjust popup styles for screens up to 500px width */
+    background-color: white;
+    padding: 20px 15px;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 450px) {
+  .popup {
+    /* Adjust popup styles for screens up to 450px width */
+    background-color: white;
+    padding: 20px 15px;
+    width: 96%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 420px) {
+  .popup {
+    /* Adjust popup styles for screens up to 420px width */
+    background-color: white;
+    padding: 10px 10px;
+    width: 96%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Adjust text sizes and input field width for smaller screens */
+  .popupHeading {
+    padding: 8px 0px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .groupHeading {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .colorHeading {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .groupInput {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin: 8px 0px 25px 0px;
+  }
+
+  .groupInput input {
+    width: 70%;
+    padding: 5px 5px;
+    border: 2px solid #cccccc;
+    border-radius: 16px;
+    color: #cccccc;
+    outline: none;
+  }
+
+  .color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .colorBoxContainer {
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .colorDiv {
+    height: 25px;
+    width: 25px;
+    border-radius: 180px;
+  }
+
+  .colorDivSelect {
+    height: 25px;
+    width: 25px;
+    border-radius: 180px;
+    border: 2px solid lightblue;
+  }
+
+  .createBtn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0px 5px;
+  }
+
+  .createBtn button {
+    width: 110px;
+    padding: 8px 0px;
+    background-color: #001F8B;
+    outline: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .createBtn button:hover {
+    transition: 300ms ease-in;
+    background-color: #0b4db6;
+  }
+
+  .popupBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 180px;
+    border: none;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #16008B;
+    text-align: center;
+  }
+}
+
+@media (max-width: 340px) {
+  .popup {
+    /* Further adjust popup styles for screens up to 340px width */
+    background-color: white;
+    padding: 10px 10px;
+    width: 96%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .popupHeading {
+    padding: 8px 0px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .groupHeading {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .colorHeading {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .groupInput {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin: 8px 0px 25px 0px;
+  }
+
+  .groupInput input {
+    width: 60%;
+    padding: 5px 5px;
+    border: 2px solid #cccccc;
+    border-radius: 16px;
+    color: #cccccc;
+    outline: none;
+  }
+
+  .color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .colorBoxContainer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .colorDiv {
+    height: 20px;
+    width: 20px;
+    border-radius: 180px;
+  }
+
+  .colorDivSelect {
+    height: 20px;
+    width: 20px;
+    border-radius: 180px;
+    border: 2px solid lightblue;
+  }
+
+  .createBtn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0px 5px;
+  }
+
+  .createBtn button {
+    width: 110px;
+    padding: 8px 0px;
+    background-color: #001F8B;
+    outline: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .createBtn button:hover {
+    transition: 300ms ease-in;
+    background-color: #0b4db6;
+  }
+
+  .popupBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 180px;
+    border: none;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #16008B;
+    text-align: center;
+  }
+}

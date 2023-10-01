@@ -1,0 +1,64 @@
+ 
+/* Overall container styling */
+.divSection {
+  height: auto; /* Set height to auto for dynamic content */
+  width: 100%; /* Full width */
+}
+
+/* Styling for individual items */
+.item {
+  border: 1px solid #ccc;
+  padding: 10px 20px; /* Adjust padding as needed */
+  height: auto; /* Set height to auto for dynamic content */
+  margin-bottom: 10px;
+  background-color: #fff;
+  text-align: justify; /* Justify text for a clean look */
+  border-radius: 5px; /* Rounded corners */
+  line-height: 20px; /* Line height for better readability */
+  font-size: 15px; /* Font size for text */
+  word-spacing: 1px; /* Adjust word spacing as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Paragraph styling inside the item */
+.item p {
+  margin: 0; /* Remove default margin to avoid extra spacing */
+}
+
+/* Styling for the date and time display */
+.showDateTime {
+  display: flex; /* Display as a flex container */
+  justify-content: flex-end; /* Align date and time to the right */
+  align-items: center; /* Center vertically */
+  padding: 10px 10px 0px 0px; /* Adjust padding as needed */
+  gap: 10px; /* Add spacing between date/time elements */
+}
+
+.showDateTime span {
+  font-size: 13px; /* Font size for date/time */
+  color: #000; /* Text color */
+}
+
+/* Styling for list items (if you're using a list) */
+.showDateTime li {
+  font-size: 13px; /* Font size for list items */
+  color: #000; /* Text color */
+  list-style: disc; /* Use disc as list item marker */
+}
+
+
+@media (max-width:400px){
+  .item {
+    border: 1px solid #ccc;
+    padding:5px; /* Adjust padding as needed */
+    height: auto; /* Set height to auto for dynamic content */
+    margin-bottom: 10px;
+    background-color: #fff;
+    text-align: justify; /* Justify text for a clean look */
+    border-radius: 5px; /* Rounded corners */
+    line-height: 20px; /* Line height for better readability */
+    font-size: 12px; /* Font size for text */
+    word-spacing: 1px; /* Adjust word spacing as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+}
