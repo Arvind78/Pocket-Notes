@@ -47,8 +47,7 @@ If you want to run the application locally or contribute to its development, fol
            ```
    
 1. Start the JSON Server:
-    ```npm run dev
-                ```
+    ```npm run dev ```
 
 2 . The React application will be available at http://localhost:5173.
 
