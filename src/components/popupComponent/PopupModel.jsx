@@ -98,7 +98,7 @@ function PopupModel({getGroupData}) {
 
   // Show an error notification
   const showErrorNotification = (messageText, descriptionText) => {
-    message({
+    message.error({
       placement: "top",
       message: messageText,
       description: descriptionText,
